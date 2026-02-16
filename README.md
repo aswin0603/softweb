@@ -329,61 +329,164 @@ Publish the website in the given URL.
 
 ### style.css
 ```css
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us | Good Foods</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <h1>Good Foods</h1>
-    </header>
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  color: #333;
+}
 
-    <nav>
-      <ul>
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./menu.html">Menu</a></li>
-        <li><a href="./admin.html">Administration</a></li>
-        <li><a href="./contact.html">Contact Us</a></li>
-      </ul>
-    </nav>
+header {
+  text-align: center;
+  padding: 20px 0;
+}
 
-    <section class="hero">
-      <div class="hero-content">
-        <h2>Get in Touch</h2>
-        <p>
-          We'd love to hear from you. Contact us for reservations or inquiries.
-        </p>
-      </div>
-    </section>
+h1 {
+  color: #495e57;
+  text-transform: uppercase;
+  font-weight: bold;
+}
 
-    <main class="container">
-      <div class="card">
-        <h3>Phone</h3>
-        <p>1234 5678</p>
-      </div>
+nav {
+  background-color: #333;
+  margin: 0 40px;
+  border-radius: 10px;
+}
 
-      <div class="card">
-        <h3>Email</h3>
-        <p>info@goodfoods.com</p>
-      </div>
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 0;
+  margin: 0;
+}
 
-      <div class="card">
-        <h3>Address</h3>
-        <p>123 Main Street, Chennai, City 12345</p>
-      </div>
-    </main>
-    <footer>
-      <hr class="footer-line" />
-      <p class="credits">
-        Designed and Developed by <span class="author">Aswin B</span>
-      </p>
-    </footer>
-  </body>
-</html>
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.hero {
+  margin: 30px 40px;
+  height: 250px;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./salad.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.hero-content {
+  color: white;
+  max-width: 700px;
+}
+
+.hero-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+  gap: 20px;
+}
+
+.card {
+  background-color: #fbdabb;
+  padding: 20px;
+  border-radius: 15px;
+  flex: 1;
+}
+
+.card h3 {
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 5px;
+  margin: 15px 0;
+}
+
+.card p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.link {
+  color: blue;
+  text-decoration: underline;
+  font-size: 0.85rem;
+}
+
+.hours {
+  list-style: none;
+  padding: 0;
+  font-size: 0.9rem;
+}
+
+footer {
+  margin-top: 50px;
+  padding: 20px 40px;
+}
+
+.footer-line {
+  flex-grow: 1;
+  border: 0;
+  border-top: 1px solid #333;
+}
+
+.credits {
+  text-align: center;
+  font-size: 0.8rem;
+  margin-top: 20px;
+}
+
+.author {
+  color: #d9534f;
+}
+
+.menu-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  padding: 0 40px;
+  gap: 20px;
+}
+
+.menu-card {
+  background-color: #fbdabb;
+  padding: 20px;
+  border-radius: 15px;
+  flex: 1;
+}
+
+.menu-card h3 {
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+.menu-card img {
+  width: 100%;
+  border-radius: 5px;
+  margin: 5px 0;
+  aspect-ratio: 4/3;
+}
+
+.card p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
 ```
 
 
