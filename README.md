@@ -491,9 +491,16 @@ footer {
 
 
 ## OUTPUT:
+### Home Page
 ![alt text](01.png)
+
+### Menu Page
 ![alt text](02.png)
+
+### Admin Page
 ![alt text](03.png)
+
+### Contact Page
 ![alt text](04.png)
 
 
